@@ -1,1 +1,28 @@
-// entry page style
+// messages
+// filter
+// 
+//
+
+///////////////////////////////// *  * ////////////////////////////////
+
+///////////////////////////////// * messages * ////////////////////////////////
+.messages
+
+///////////////////////////////// * filter * ////////////////////////////////
+.filter
+	padding: 20px 12px
+	background-color: #f8eadc
+	@include box-shadow(inset 0 -1px 2px rgba(169,121,73,.25))
+	+box
+	.filter__search
+		padding: 7px 10px
+		outline: none
+		border: none
+		+transition(.2s)
+		background-color: #fff
+		@include box-shadow(inset 0 0 4px rgba(166,97,60,.75))
+		+fs(13)
+		+placeholder(#aa6730)
+		&:focus
+			+box-shadow(inset 0 0 4px rgba(166,97,60,.75), inset 0 0px 4px #aa6730)
+			+transition(.2s)
