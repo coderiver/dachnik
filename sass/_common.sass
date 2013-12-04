@@ -21,6 +21,7 @@ a
 	height: auto !important
 	height: 100%
 	overflow: hidden
+	padding-bottom: 500px
 ///////////////////////////////// * .header * ////////////////////////////////
 header
 	width: 980px
@@ -137,10 +138,6 @@ nav
 		text-transform: uppercase
 		text-decoration: none 
 		+fs(16)
-
-
-
-
 ///////////////////////////////// * .footer * ////////////////////////////////
 .footer__top
 	height: 107px
@@ -162,6 +159,8 @@ nav
 	a
 		color: rgba(255,255,255, .5)
 		text-decoration: none
+		&:hover
+			text-decoration: underline
 		+fs(12)
 	.logo
 		float: left
@@ -202,22 +201,16 @@ nav
 	a
 		&:hover
 			+opacity(0.8) 
-	
-
-
-
-
-
-
-
 ///////////////////////////////// * page * ////////////////////////////////
-.page
+.bg
 	min-height: 470px
 	margin-top: -42px
 	padding-top: 72px
-	margin-bottom: 500px
 	background: url(../img/bg.jpg) 0px 0px  no-repeat
-	position: relative
+	position: absolute
+	top: 142px
+	left: 0
+	right: 0
 	z-index: 666
 	+cover
 	&:after
@@ -229,8 +222,14 @@ nav
 		position: absolute
 		top: 42px
 
-.page-i
+.page
 	width: 980px
-	margin: 0 auto
+	min-height: 1180px
+	// min-height: 680px
+	margin: 35px auto 0
 	background-color: #fff
 	@include box-shadow(0 1px 18px #000)
+	position: absolute
+	z-index: 1666
+	left: 50%
+	margin-left: -445px
