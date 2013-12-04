@@ -3,11 +3,8 @@
 // .header
 	// -topper
 	// -nav
-	//
-	//
 // .footer
-// index.html style
-
+// page
 ///////////////////////////////// * fonts * ////////////////////////////////
 
 ///////////////////////////////// * base * ////////////////////////////////
@@ -20,16 +17,18 @@ a
 		text-decoration: none
 
 .out
-	width: 980px
-	margin: 0 auto
 	min-height: 100%
 	height: auto !important
 	height: 100%
+	overflow: hidden
 ///////////////////////////////// * .header * ////////////////////////////////
 header
-
+	width: 980px
+	margin: 0 auto
+	font-size: 0
 .topper
 	padding: 18px 10px 0px
+	margin-bottom: 25px
 	+box
 	+clr
 .logo
@@ -97,20 +96,42 @@ header
 		display: none
 		
 nav
+	position: relative
+	display: inline-block
+	&:after, &:before
+		content: ""
+		width: 2000px
+		height: 42px
+		background: #fff
+		position: absolute
+		top: 0
+		z-index: 777
+	&:after
+		right: -2000px
+	&:before
+		left: -2000px
 	ul
-		+clr
 		list-style: none
+		+clr
 	li
 		float: left
+		background: #FFF 
 		&.is-active
+			background: linear-gradient(to top, rgba(152,180,200, 0.2), rgba(29,90,135, 0.99))
+			z-index: 999
+			position: relative
 			a
-				+g(#1c5a87, #88acc2)
+				// +g(#1c5a87, #88acc2)
 				color: #fff
+				background: initial 
 	a
 		height: 42px
 		line-height: 42px
 		padding: 0 25px 
 		display: block
+		position: relative
+		z-index: 777
+		background: #FFF 
 		font-weight: bold
 		color: $gr
 		text-transform: uppercase
@@ -134,7 +155,6 @@ nav
 		background: url(../img/icons/grass.png) 0px 0px  repeat-x
 		width: 100%
 		height: 25px
-
 .footer
 	background-color: #533014
 	background-image: linear-gradient(90deg, transparent 50%, rgba(0,0,0,.1) 50%)
@@ -190,4 +210,27 @@ nav
 
 
 
-///////////////////////////////// * index.html style * ////////////////////////////////
+///////////////////////////////// * page * ////////////////////////////////
+.page
+	min-height: 470px
+	margin-top: -42px
+	padding-top: 72px
+	margin-bottom: 500px
+	background: url(../img/bg.jpg) 0px 0px  no-repeat
+	position: relative
+	z-index: 666
+	+cover
+	&:after
+		content: ""
+		width: 100%
+		height: 20px
+		background: linear-gradient(to top, rgba(250,251,253, 0.055), rgba(156,183,202, 0.2))
+		z-index: 1999
+		position: absolute
+		top: 42px
+
+.page-i
+	width: 980px
+	margin: 0 auto
+	background-color: #fff
+	@include box-shadow(0 1px 18px #000)
