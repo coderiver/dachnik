@@ -1,0 +1,18 @@
+[class^="btn-"], [class*=" btn-"] { display: inline-block; vertical-align: middle; cursor: pointer; background: #5493e3; }
+[class^="btn-"]:hover, [class*=" btn-"]:hover { background: #80afea; -moz-transition: 0.1s; -o-transition: 0.1s; -webkit-transition: 0.1s; -ms-transition: 0.1s; transition: 0.1s; }
+[class^="btn-"]:active, [class*=" btn-"]:active { -webkit-transform: scale(0.97); -moz-transform: scale(0.97); -ms-transform: scale(0.97); -o-transform: scale(0.97); transform: scale(0.97); }
+
+[class^="i-"], [class*=" i-"] { display: inline-block; vertical-align: middle; }
+
+.i-serch { background: url('../../img/icons-s902d6a4997.png') 0 -202px no-repeat; width: 16px; height: 18px; }
+
+.i-home { background: url('../../img/icons-s902d6a4997.png') 0 -230px no-repeat; width: 16px; height: 16px; }
+.i-home:hover { opacity: 0.8; }
+
+.i-vk { background: url('../../img/icons-s902d6a4997.png') 0 -124px no-repeat; width: 16px; height: 16px; }
+
+.i-tw { background: url('../../img/icons-s902d6a4997.png') 0 -150px no-repeat; width: 16px; height: 16px; }
+
+.i-fb { background: url('../../img/icons-s902d6a4997.png') 0 -176px no-repeat; width: 16px; height: 16px; }
+
+.i-lj { background: url('../../img/icons-s902d6a4997.png') 0 -98px no-repeat; width: 16px; height: 16px; }

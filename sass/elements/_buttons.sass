@@ -1,0 +1,12 @@
+///////////////////////////////// * btn * ////////////////////////////////
+[class^="btn-"], [class*=" btn-"]
+	$btn-bg: #5493E3
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	background: $btn-bg
+	&:hover
+		background: lighten($btn-bg,10%)  
+		+transition(0.1s)
+	&:active
+		+transform(scale(0.97))
