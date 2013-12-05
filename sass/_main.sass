@@ -146,10 +146,55 @@
 		padding: 25px 22px 25px 17px
 		overflow: hidden
 		+box
+	.user-stat__row
+		margin-bottom: 15px
+		overflow: hidden
+	.user-stat__table-title
+		margin-bottom: 15px
+		padding-left: 10px
+		+box
+	.user-stat__table
+		color: $dbl
+		+fs(11)
+		+ar
+		table
+			width: 190px
+		tr
+			overflow: hidden
+			&:hover
+				background: #fef3e9
+				cursor: pointer
+		td
+			padding: 2px 0
+		.user-stat__table-info
+			width: 95px
+			padding-left: 10px
+			+box
+		.user-stat__table-all, .user-stat__table-new
+			padding: 0 3px
+			+fs(13)
+		.user-stat__table-all
+			width: 55px
+			text-align: right
+		.user-stat__table-new
+			width: 55px
+			text-align: left
+			color: $or
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			a
+				color: $or
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+
+
 	.ava
 		float: left
+		margin-left: 8px
 	.user-stat__name
-		width: 135px
+		width: 127px
 		margin-left: 10px
 		float: left
 		line-height: 1.2

@@ -265,8 +265,22 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .user-stat .user-stat__top:after { background: url('../img/icons-sf5b7d1983a.png') 0 -416px no-repeat; width: 18px; height: 11px; }
 .user-stat .user-stat__bottom:after { background: url('../img/icons-sf5b7d1983a.png') 0 -395px no-repeat; width: 18px; height: 11px; }
 .user-stat .user-stat__in { border-top: 1px solid #efd8c4; border-bottom: 1px solid #efd8c4; padding: 25px 22px 25px 17px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.user-stat .ava { float: left; }
-.user-stat .user-stat__name { width: 135px; margin-left: 10px; float: left; line-height: 1.2; color: #27861b; font-size: 13px; font-size: 1.3rem; text-decoration: underline; }
+.user-stat .user-stat__row { margin-bottom: 15px; overflow: hidden; }
+.user-stat .user-stat__table-title { margin-bottom: 15px; padding-left: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.user-stat .user-stat__table { color: #48606f; font-size: 11px; font-size: 1.1rem; font-family: Arial, Tahoma, sans-serif; }
+.user-stat .user-stat__table table { width: 190px; }
+.user-stat .user-stat__table tr { overflow: hidden; }
+.user-stat .user-stat__table tr:hover { background: #fef3e9; cursor: pointer; }
+.user-stat .user-stat__table td { padding: 2px 0; }
+.user-stat .user-stat__table .user-stat__table-info { width: 95px; padding-left: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.user-stat .user-stat__table .user-stat__table-all, .user-stat .user-stat__table .user-stat__table-new { padding: 0 3px; font-size: 13px; font-size: 1.3rem; }
+.user-stat .user-stat__table .user-stat__table-all { width: 55px; text-align: right; }
+.user-stat .user-stat__table .user-stat__table-new { width: 55px; text-align: left; color: #ff8532; text-decoration: underline; }
+.user-stat .user-stat__table .user-stat__table-new:hover { text-decoration: none; }
+.user-stat .user-stat__table .user-stat__table-new a { color: #ff8532; text-decoration: underline; }
+.user-stat .user-stat__table .user-stat__table-new a:hover { text-decoration: none; }
+.user-stat .ava { float: left; margin-left: 8px; }
+.user-stat .user-stat__name { width: 127px; margin-left: 10px; float: left; line-height: 1.2; color: #27861b; font-size: 13px; font-size: 1.3rem; text-decoration: underline; }
 .user-stat .user-stat__name:hover { text-decoration: none; }
 
 .ava { width: 41px; height: 41px; padding: 2px; background-color: white; -webkit-box-shadow: 0 1px 2px rgba(178, 142, 105, 0.75); -moz-box-shadow: 0 1px 2px rgba(178, 142, 105, 0.75); box-shadow: 0 1px 2px rgba(178, 142, 105, 0.75); }
