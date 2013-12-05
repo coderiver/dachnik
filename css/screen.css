@@ -202,7 +202,7 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .page:before, .page:after { content: ""; display: table; }
 .page:after { clear: both; }
 
-.page__top { min-height: 60px; margin-bottom: 30px; background: url(../img/icons/indian-grass.png) 0px 50px repeat-x; }
+.page__top { min-height: 60px; margin-bottom: 30px; background: url(../img/icons/i-indian-grass.png) 0px 50px repeat-x; }
 .page__top .i-message { display: inline-block; margin-right: 5px; }
 .page__top h2 { margin-bottom: 15px; display: inline-block; color: #2c7bae; font-size: 26px; font-size: 2.6rem; }
 
