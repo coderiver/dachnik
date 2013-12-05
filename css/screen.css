@@ -216,13 +216,15 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .page__top .i-message { display: inline-block; margin-right: 5px; }
 .page__top h2 { margin-bottom: 15px; display: inline-block; color: #2c7bae; font-size: 26px; font-size: 2.6rem; }
 
-.messages { border: 1px solid #f3e2d3; }
+.messages { border: 1px solid #f3e2d3; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.messages:before, .messages:after { content: ""; display: table; }
+.messages:after { clear: both; }
 
 .messages__item { *zoom: 1; border-top: 1px solid #f3e2d3; }
 .messages__item:before, .messages__item:after { content: ""; display: table; }
 .messages__item:after { clear: both; }
 .messages__item:first-child { border-top: none; }
-.messages__item.is-in .messages__item-user:after, .messages__item.is-out .messages__item-user:after { content: ""; position: absolute; right: -15px; top: 17px; }
+.messages__item.is-in .messages__item-user:after, .messages__item.is-out .messages__item-user:after { content: ""; position: absolute; right: 0px; top: 17px; }
 .messages__item.is-in { position: relative; }
 .messages__item.is-in .messages__item-user:after { background: url('../img/icons-sf5b7d1983a.png') 0 -437px no-repeat; width: 8px; height: 13px; }
 .messages__item.is-out { position: relative; }
@@ -239,8 +241,13 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .messages__item .messages__item-row .i-mess { margin-right: 5px; }
 .messages__item .messages__item-row .dark-blue { text-decoration: none; }
 .messages__item .messages__item-row a { margin-right: 5px; }
-.messages__item .messages__item-text { padding: 11px; overflow: hidden; margin-left: 255px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; color: #48606f; }
+.messages__item .messages__item-text { padding: 11px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; color: #48606f; }
 .messages__item .messages__item-date { color: #999999; font-size: 11px; font-size: 1.1rem; }
+
+.messages__item_mod { margin: 0px 75px 20px 20px; border: 1px solid #f3e2d3; }
+.messages__item_mod:first-child { border-top: 1px solid #f3e2d3; }
+
+.messages__next { margin-top: 5px; margin-bottom: 15px; display: block; text-align: right; color: #ff8532; }
 
 .filter { padding: 20px 12px; background-color: #f8eadc; -webkit-box-shadow: inset 0 -1px 2px rgba(169, 121, 73, 0.25); -moz-box-shadow: inset 0 -1px 2px rgba(169, 121, 73, 0.25); box-shadow: inset 0 -1px 2px rgba(169, 121, 73, 0.25); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .filter .filter__search { padding: 7px 10px; outline: none; border: none; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; background-color: white; -webkit-box-shadow: inset 0 0 4px rgba(166, 97, 60, 0.75); -moz-box-shadow: inset 0 0 4px rgba(166, 97, 60, 0.75); box-shadow: inset 0 0 4px rgba(166, 97, 60, 0.75); font-size: 13px; font-size: 1.3rem; }
