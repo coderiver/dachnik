@@ -7,13 +7,7 @@
 
 ///////////////////////////////// * messages * ////////////////////////////////
 .messages
-	// padding: 15px 20px
 	border: 1px solid #f3e2d3
-	+clr
-	+box
-	.btn-middle
-		float: right
-		margin: 0 22px 17px 0
 .messages__item
 	+clr
 	border-top: 1px solid #F3E2D3
@@ -24,7 +18,7 @@
 			&:after
 				content: ""
 				position: absolute
-				right: 0px
+				right: -15px
 				top: 17px
 	&.is-in
 		position: relative
@@ -73,28 +67,14 @@
 	.messages__item-text
 		padding: 11px
 		overflow: hidden
+		margin-left: 255px
 		+box
 		+fs(13)
 		color: #48606F 
 	.messages__item-date
 		color: #999
-		+fs(11)
+		+fs(11) 
 
-.messages__item_mod
-	margin: 0px 75px 20px 20px
-	border: 1px solid #f3e2d3
-	&:first-child
-		border-top: 1px solid #f3e2d3
-.messages__item_repply
-	margin: 0 15px 20px 80px
-	background: #FFF6EE
-	border: none
-
-.messages__next
-	margin: 5px 20px 15px 0
-	display: block
-	text-align: right
-	color: $or 
 
 ///////////////////////////////// * filter * ////////////////////////////////
 .filter
