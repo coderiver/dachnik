@@ -1,12 +1,30 @@
+
 ///////////////////////////////// * btn * ////////////////////////////////
 [class^="btn-"], [class*=" btn-"]
-	$btn-bg: #5493E3
+	+unselect
 	display: inline-block
 	vertical-align: middle
 	cursor: pointer
-	background: $btn-bg
+	text-transform: uppercase
+	color: #FFF
+	+br(4px)
 	&:hover
-		background: lighten($btn-bg,10%)  
 		+transition(0.1s)
 	&:active
-		+transform(scale(0.97))
+		+transform(scale(0.95))
+
+.btn-middle
+	padding: 5px 15px
+	+fs(11)
+.btn-small
+	padding: 3px 7px
+	+fs(9)
+
+.btn-orange
+	$bg: #ff8532
+	background: $bg
+	color: #fff
+	@include text-shadow(0 1px 0 rgba(0,0,0, .25))
+	+ar
+	&:hover
+		background: lighten($bg,5%) 

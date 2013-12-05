@@ -7,6 +7,84 @@
 
 ///////////////////////////////// * messages * ////////////////////////////////
 .messages
+	border: 1px solid #f3e2d3
+.messages__item
+	+clr
+	border-top: 1px solid #F3E2D3
+	&:first-child
+		border-top: none 
+	&.is-in, &.is-out
+		.messages__item-user
+			&:after
+				content: ""
+				position: absolute
+				right: -15px
+				top: 17px
+	&.is-in
+		position: relative
+		.messages__item-user
+			&:after
+				+s(i-arr_l)
+	&.is-out
+		position: relative
+		.messages__item-user
+			&:after
+				+s(i-arr_r)
+	.messages__item-user
+		float: left
+		width: 235px
+		padding: 11px
+		font-size: 0
+		position: relative
+		+clr
+		+box
+	.messages__item-img
+		width: 41px
+		height: 41px
+		padding: 2px
+		overflow: hidden
+		float: left
+		background-color: #fff
+		position: relative
+		@include box-shadow(0 1px 2px rgba(178,142,105,.75))
+		img
+			max-width: 100%
+			display: block
+	.messages__item-info
+		width: 155px
+		float: left
+		margin-left: 10px
+		+fs(13)
+		a
+			color: $gr
+			+fs(13) 
+	.messages__item-row
+		vertical-align: middle
+		display: inline-block
+		.i-mess, a, span
+			vertical-align: middle
+			display: inline-block
+		.i-basc
+			vertical-align: top
+			display: inline-block
+			margin-right: 8px
+		.i-mess
+			margin-right: 5px
+		.dark-blue
+			text-decoration: none
+		a
+			margin-right: 5px
+	.messages__item-text
+		padding: 11px
+		overflow: hidden
+		margin-left: 255px
+		+box
+		+fs(13)
+		color: #48606F 
+	.messages__item-date
+		color: #999
+		+fs(11) 
+
 
 ///////////////////////////////// * filter * ////////////////////////////////
 .filter
