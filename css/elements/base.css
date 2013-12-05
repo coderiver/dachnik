@@ -9,31 +9,35 @@
 .btn-orange { background: #ff8532; color: white; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); font-family: Arial, Tahoma, sans-serif; }
 .btn-orange:hover { background: #ff944c; }
 
+.btn_mess2 { float: right; margin: 0 22px 17px 0; }
+
 [class^="i-"], [class*=" i-"] { display: inline-block; vertical-align: middle; }
 
-.i-serch { background: url('../../img/icons-s9cfe4dc681.png') 0 -297px no-repeat; width: 16px; height: 18px; }
+.i-serch { background: url('../../img/icons-s55b3b47e7e.png') 0 -334px no-repeat; width: 16px; height: 18px; }
 
-.i-home { background: url('../../img/icons-s9cfe4dc681.png') 0 -325px no-repeat; width: 16px; height: 16px; }
+.i-home { background: url('../../img/icons-s55b3b47e7e.png') 0 -362px no-repeat; width: 16px; height: 16px; }
 .i-home:hover { opacity: 0.8; }
 
-.i-vk { background: url('../../img/icons-s9cfe4dc681.png') 0 -219px no-repeat; width: 16px; height: 16px; }
+.i-vk { background: url('../../img/icons-s55b3b47e7e.png') 0 -256px no-repeat; width: 16px; height: 16px; }
 
-.i-tw { background: url('../../img/icons-s9cfe4dc681.png') 0 -245px no-repeat; width: 16px; height: 16px; }
+.i-tw { background: url('../../img/icons-s55b3b47e7e.png') 0 -282px no-repeat; width: 16px; height: 16px; }
 
-.i-fb { background: url('../../img/icons-s9cfe4dc681.png') 0 -271px no-repeat; width: 16px; height: 16px; }
+.i-fb { background: url('../../img/icons-s55b3b47e7e.png') 0 -308px no-repeat; width: 16px; height: 16px; }
 
-.i-lj { background: url('../../img/icons-s9cfe4dc681.png') 0 -154px no-repeat; width: 16px; height: 16px; }
+.i-lj { background: url('../../img/icons-s55b3b47e7e.png') 0 -191px no-repeat; width: 16px; height: 16px; }
 
-.i-message { background: url('../../img/icons-s9cfe4dc681.png') 0 -180px no-repeat; width: 37px; height: 29px; }
+.i-message { background: url('../../img/icons-s55b3b47e7e.png') 0 -217px no-repeat; width: 37px; height: 29px; }
 
-.i-indian-grass { background: url('../../img/icons-s9cfe4dc681.png') 0 -66px no-repeat; width: 31px; height: 11px; }
+.i-indian-grass { background: url('../../img/icons-s55b3b47e7e.png') 0 -66px no-repeat; width: 31px; height: 11px; }
 
-.i-mess { background: url('../../img/icons-s9cfe4dc681.png') 0 -351px no-repeat; width: 12px; height: 10px; }
+.i-mess { background: url('../../img/icons-s55b3b47e7e.png') 0 -388px no-repeat; width: 12px; height: 10px; }
 
-.i-basc { background: url('../../img/icons-s9cfe4dc681.png') 0 -371px no-repeat; width: 11px; height: 14px; }
+.i-chat { background: url('../../img/icons-s55b3b47e7e.png') 0 -87px no-repeat; width: 34px; height: 27px; }
 
-.i-arr_l { background: url('../../img/icons-s9cfe4dc681.png') 0 -416px no-repeat; width: 8px; height: 13px; }
+.i-basc { background: url('../../img/icons-s55b3b47e7e.png') 0 -408px no-repeat; width: 11px; height: 14px; }
 
-.i-arr_r { background: url('../../img/icons-s9cfe4dc681.png') 0 -439px no-repeat; width: 8px; height: 13px; }
+.i-arr_l { background: url('../../img/icons-s55b3b47e7e.png') 0 -474px no-repeat; width: 8px; height: 13px; }
 
-.i-arr_t { background: url('../../img/icons-s9cfe4dc681.png') 0 -395px no-repeat; width: 18px; height: 11px; }
+.i-arr_r { background: url('../../img/icons-s55b3b47e7e.png') 0 -497px no-repeat; width: 8px; height: 13px; }
+
+.i-arr_t { background: url('../../img/icons-s55b3b47e7e.png') 0 -453px no-repeat; width: 18px; height: 11px; }
