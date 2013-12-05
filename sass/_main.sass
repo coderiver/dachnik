@@ -1,6 +1,6 @@
 // messages
 // filter
-// 
+// user-stat
 //
 
 ///////////////////////////////// *  * ////////////////////////////////
@@ -38,18 +38,8 @@
 		position: relative
 		+clr
 		+box
-	.messages__item-img
-		width: 41px
-		height: 41px
-		padding: 2px
-		overflow: hidden
-		float: left
-		background-color: #fff
-		position: relative
-		@include box-shadow(0 1px 2px rgba(178,142,105,.75))
-		img
-			max-width: 100%
-			display: block
+		.ava
+			float: left
 	.messages__item-info
 		width: 155px
 		float: left
@@ -104,3 +94,57 @@
 		&:focus
 			+box-shadow(inset 0 0 4px rgba(166,97,60,.75), inset 0 0px 4px #aa6730)
 			+transition(.2s)
+
+///////////////////////////////// * user-stat * ////////////////////////////////
+.user-stat
+	margin-bottom: 20px
+	background: #f8eadd
+	@include box-shadow(inset 0 -1px 2px rgba(169,121,73,.25))
+	.user-stat__top, .user-stat__bottom
+		background: #f8eadd
+		height: 45px
+		display: block
+		position: relative
+		&:hover
+			background: #f3e5d7 
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: -5px 
+			left: 50%
+			margin-left: -9px
+	.user-stat__top
+		&:after
+			+s(i-arr_t)
+	.user-stat__bottom
+		&:after
+			+s(i-arr_b)
+	.user-stat__in
+		border-top: 1px solid #EFD8C4 
+		border-bottom: 1px solid #EFD8C4 
+		padding: 25px 22px 25px 17px
+		overflow: hidden
+		+box
+	.ava
+		float: left
+	.user-stat__name
+		width: 135px
+		margin-left: 10px
+		float: left
+		line-height: 1.2
+		color: $gr
+		+fs(13)
+		text-decoration: underline 
+		&:hover
+			text-decoration: none
+// .ava
+.ava
+	width: 41px
+	height: 41px
+	padding: 2px
+	background-color: #fff
+	@include box-shadow(0 1px 2px rgba(178,142,105,.75))
+	img
+		max-width: 100%
+		display: block
