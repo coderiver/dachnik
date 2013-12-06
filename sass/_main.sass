@@ -1,8 +1,10 @@
 // messages
 // filter
 // user-stat
+// pagination
+// article
+// comment
 //
-
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -211,3 +213,189 @@
 	img
 		max-width: 100%
 		display: block
+///////////////////////////////// * pagination * ////////////////////////////////
+.pagination
+	.pagination__next, .pagination__prew
+		&:hover
+			+opacity(0.8)
+		&:active
+			+transform(scale(0.95))
+	.pagination__next
+		margin-left: 6px
+		display: inline-block
+		+s(i-pag_next)
+	.pagination__prew
+		margin-left: 6px
+		display: inline-block
+		+s(i-pag_prew)
+///////////////////////////////// * article * ////////////////////////////////
+.comm
+	color: #4A6271 
+	+fs(13)
+	.i-komm
+		margin-right: 5px
+.views
+	color: #4A6271 
+	+fs(13)
+	.i-views
+		margin-right: 5px
+
+.article
+	border-bottom: 1px solid #EAEEDB 
+	color: $dbl
+	overflow: hidden
+	+fs(13)
+	p
+		margin-bottom: 15px
+	a
+		color: $gr
+	.article__media
+		float: left
+		padding: 0 10px 5px 0px
+		img
+			margin-bottom: 5px
+	.article__media-note
+		color: $dbl
+		+fs(10)
+	[class^="btn-"], [class*=" btn-"]
+		margin-bottom: 15px
+		color: #FFF
+		text-decoration: none 
+.article__top
+	margin-bottom: 8px
+	.h4
+		margin-right: 10px
+	.comm
+		margin-right: 10px
+		display: inline-block
+	.views
+		display: inline-block
+
+.article__author
+	margin-bottom: 15px
+	color: $dbl
+	+fs(10)
+	+ar
+	.i-lock
+		margin-right: 5px
+	a
+		margin: 0 5px
+		color: $or
+		+fs(13)
+
+//tag
+.tag
+	margin-bottom: 15px
+	+clr
+	li
+		margin-left: 7px 
+		float: left
+		&:first-child
+			margin-left: 0
+	a
+		$bg: #F5F7EE 
+		display: inline-block
+		padding: 5px 10px 5px 20px
+		background: $bg
+		color: $gr
+		text-decoration: none
+		position: relative
+		+br(3px)
+		+transition(0.1s)
+		+fs(11)
+		&:hover
+			+transition(0.1s)
+			background: lighten($bg,2%)
+		&:after
+			content: ""
+			width: 6px
+			height: 6px
+			+br(50%)
+			background: #FFF
+			position: absolute
+			top: 50%
+			left: 4px
+			margin-top: -3px
+
+///////////////////////////////// * comment  * ////////////////////////////////
+.comment
+	padding: 45px 0 0
+	+box
+.comment__num
+	margin-bottom: 25px
+	color: $gr
+	font-weight: bold
+	+fs(16)
+	.i-comm2
+		margin-right: 5px
+
+.comment__in
+	.comment__pull
+		margin-left: 35px
+
+.comment__item
+	margin-bottom: 25px
+	padding: 15px 15px 10px 10px
+	border: 1px solid #ccdee3
+	+box
+	ul
+		
+	&:hover	
+		background: #FFF9E2
+		.comment__icons
+			display: block
+		.btn-orange
+			color: #fff
+			background: $or
+
+
+
+
+
+
+
+	.comment__icons
+		display: none
+	.btn-orange
+		background: transparent
+		color: $or  
+
+.comment__date
+	color: $dbl
+	line-height: 21px 
+	+ar
+	+fs(11)
+.comment__item-mess
+	margin-bottom: 15px
+	a
+		color: $gr 
+.comment__item-user
+	margin-bottom: 10px
+	[class^="i-"], [class*=" i-"]
+		margin-right: 5px
+	a
+		color: $or
+.comment__row
+	+clr
+	[class^="btn-"], [class*=" btn-"]
+		float: left
+	.comment__date
+		float: left
+		margin-right: 10px
+	.comment__icons
+		float: right
+	a
+		text-decoration: none
+.comment__label
+	float: right
+.comment__icons
+	+clr
+	[class^="i-"], [class*=" i-"]
+		margin: 0 4px
+		cursor: pointer
+	li
+		float: left
+	.i-tree
+		margin: 0px 8px
+
+
