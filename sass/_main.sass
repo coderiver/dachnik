@@ -534,8 +534,15 @@
 .tags-block
 	padding: 20px 15px 20px 20px
 	background-color: #f5f7ee
+	position: relative
 	@include box-shadow(inset 0 1px 1px #a2ac84)
 	+box
+	&:after
+		content: ""
+		+s(tags-block_arr)
+		position: absolute
+		left: -10px
+		top: 28px
 	.tags-block__title
 		color: #828E5F
 		+fs(15)
