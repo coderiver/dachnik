@@ -1,13 +1,18 @@
 // messages
 // filter
 // user-stat
+// pagination
+// article
+// comment
 //
-
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
 .messages
+	// padding: 15px 20px
 	border: 1px solid #f3e2d3
+	+clr
+	+box
 .messages__item
 	+clr
 	border-top: 1px solid #F3E2D3
@@ -18,7 +23,7 @@
 			&:after
 				content: ""
 				position: absolute
-				right: -15px
+				right: 0px
 				top: 17px
 	&.is-in
 		position: relative
@@ -67,14 +72,28 @@
 	.messages__item-text
 		padding: 11px
 		overflow: hidden
-		margin-left: 255px
 		+box
 		+fs(13)
 		color: #48606F 
 	.messages__item-date
 		color: #999
-		+fs(11) 
+		+fs(11)
 
+.messages__item_mod
+	margin: 0px 75px 20px 20px
+	border: 1px solid #f3e2d3
+	&:first-child
+		border-top: 1px solid #f3e2d3
+.messages__item_repply
+	margin: 0 15px 20px 80px
+	background: #FFF6EE
+	border: none
+
+.messages__next
+	margin: 5px 20px 15px 0
+	display: block
+	text-align: right
+	color: $or 
 
 ///////////////////////////////// * filter * ////////////////////////////////
 .filter
@@ -84,6 +103,7 @@
 	+box
 	.filter__search
 		padding: 7px 10px
+		margin-right: 9px
 		outline: none
 		border: none
 		+transition(.2s)
@@ -126,10 +146,55 @@
 		padding: 25px 22px 25px 17px
 		overflow: hidden
 		+box
+	.user-stat__row
+		margin-bottom: 15px
+		overflow: hidden
+	.user-stat__table-title
+		margin-bottom: 15px
+		padding-left: 10px
+		+box
+	.user-stat__table
+		color: $dbl
+		+fs(11)
+		+ar
+		table
+			width: 190px
+		tr
+			overflow: hidden
+			&:hover
+				background: #fef3e9
+				cursor: pointer
+		td
+			padding: 2px 0
+		.user-stat__table-info
+			width: 95px
+			padding-left: 10px
+			+box
+		.user-stat__table-all, .user-stat__table-new
+			padding: 0 3px
+			+fs(13)
+		.user-stat__table-all
+			width: 55px
+			text-align: right
+		.user-stat__table-new
+			width: 55px
+			text-align: left
+			color: $or
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			a
+				color: $or
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+
+
 	.ava
 		float: left
+		margin-left: 8px
 	.user-stat__name
-		width: 135px
+		width: 127px
 		margin-left: 10px
 		float: left
 		line-height: 1.2
@@ -148,3 +213,238 @@
 	img
 		max-width: 100%
 		display: block
+///////////////////////////////// * pagination * ////////////////////////////////
+.pagination
+	text-align: center
+	font-size: 0
+	&.is-unactive
+		+opacity(0.5) 
+	li
+		display: inline-block
+		padding: 0 10px
+	a
+		vertical-align: middle
+		font-weight: bold
+		+fs(12)
+		color: $gr 
+	.pagination__next, .pagination__prew
+		&:hover
+			+opacity(0.8)
+		&:active
+			+transform(scale(0.95))
+	.pagination__next
+		margin-left: 6px
+		display: inline-block
+		+s(i-pag_next)
+	.pagination__prew
+		margin-left: 6px
+		display: inline-block
+		+s(i-pag_prew)
+///////////////////////////////// * article * ////////////////////////////////
+.comm
+	color: #4A6271 
+	+fs(13)
+	.i-comm
+		margin-right: 5px
+.views
+	color: #4A6271 
+	+fs(13)
+	.i-views
+		margin-right: 5px
+
+.article
+	border-bottom: 1px solid #EAEEDB 
+	color: $dbl
+	overflow: hidden
+	+fs(13)
+	p
+		margin-bottom: 15px
+	a
+		color: $gr
+	.article__media
+		float: left
+		padding: 0 10px 5px 0px
+		img
+			margin-bottom: 5px
+	.article__media-note
+		color: $dbl
+		+fs(10)
+	[class^="btn-"], [class*=" btn-"]
+		margin-bottom: 15px
+		color: #FFF
+		text-decoration: none 
+.article__top
+	margin-bottom: 8px
+	.h4
+		margin-right: 10px
+	.comm
+		margin-right: 10px
+		display: inline-block
+	.views
+		display: inline-block
+
+.article__author
+	margin-bottom: 15px
+	color: $dbl
+	+fs(10)
+	+ar
+	.i-lock
+		margin-right: 5px
+	a
+		margin: 0 5px
+		color: $or
+		+fs(13)
+
+//tag
+.tag
+	margin-bottom: 15px
+	+clr
+	li
+		margin-left: 7px 
+		float: left
+		&:first-child
+			margin-left: 0
+	a
+		$bg: #F5F7EE 
+		display: inline-block
+		padding: 5px 10px 5px 20px
+		background: $bg
+		color: $gr
+		text-decoration: none
+		position: relative
+		+br(3px)
+		+transition(0.1s)
+		+fs(11)
+		&:hover
+			+transition(0.1s)
+			background: lighten($bg,2%)
+		&:after
+			content: ""
+			width: 6px
+			height: 6px
+			+br(50%)
+			background: #FFF
+			position: absolute
+			top: 50%
+			left: 4px
+			margin-top: -3px
+
+///////////////////////////////// * comment  * ////////////////////////////////
+.comment
+	padding: 45px 0 0
+	+box
+.comment__num
+	margin-bottom: 25px
+	color: $gr
+	font-weight: bold
+	+fs(16)
+	.i-comm2
+		margin-right: 5px
+
+.comment__in
+	.comment__pull
+		margin-left: 35px
+
+.comment__item
+	margin-bottom: 25px
+	padding: 15px 15px 10px 10px
+	display: inline-block
+	border: 1px solid #ccdee3
+	position: relative
+	+box
+	&:before
+		content: ""
+		width: 1px
+		background: #D2E3EA 
+		position: absolute
+		left: -21px
+		top: -26px
+		bottom: 50%
+	&:after
+		content: ""
+		+s(i-border)
+		position: absolute
+		left: -25px
+		top: 50%
+		margin-top: -5px
+	&:hover	
+		background: #FFF9E2
+		.comment__icons
+			display: block
+		.btn-orange
+			color: #fff
+			background: $or
+	.comment__icons
+		display: none
+	.btn-orange
+		background: transparent
+		color: $or
+	&.is-hidden
+		width: 100%
+		.comment__item-user
+			position: relative
+			&:after
+				content: ""
+				+arr(7,5,  #577f8a, bottom)
+				position: absolute
+				top: 10px
+				right: 0px
+		.comment__item-mess
+			display: none
+		.comment__row
+			display: none
+.comment__item-media
+	position: relative
+	display: inline-block
+	margin-bottom: 20px
+	&:after
+		content: ""
+		+s(i-media)
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -24px
+		margin-top: -24px
+.comment__date
+	color: $dbl
+	opacity: 0.5 
+	line-height: 21px 
+	+ar
+	+fs(11)
+.comment__item-mess
+	margin-bottom: 15px
+	a
+		color: $gr 
+.comment__item-user
+	margin-bottom: 10px
+	[class^="i-"], [class*=" i-"]
+		margin-right: 5px
+	.comment__date
+		display: inline-block
+		margin-left: 10px
+	a
+		color: $or
+.comment__row
+	+clr
+	[class^="btn-"], [class*=" btn-"]
+		float: left
+	.comment__date
+		float: left
+		margin-right: 10px
+	.comment__icons
+		float: right
+	a
+		text-decoration: none
+.comment__label
+	float: right
+.comment__icons
+	+clr
+	[class^="i-"], [class*=" i-"]
+		margin: 0 4px
+		cursor: pointer
+	li
+		float: left
+	.i-tree
+		margin: 0px 8px
+
+
