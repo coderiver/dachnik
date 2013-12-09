@@ -50,10 +50,93 @@
 				<h2 class="h2">Создание новой записи</h2>
 			</div>
 			<div class="l-sidebar l-sidebar_r">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, fugit, distinctio eum nam corrupti cupiditate nihil explicabo officiis. Voluptatem, earum, atque dicta aliquid quibusdam amet quasi alias optio praesentium deleniti perspiciatis incidunt quaerat enim libero officia nam ipsa illum aliquam facilis vitae magnam quidem similique quae. Cum, nesciunt, saepe, doloremque, perferendis eius inventore eaque sint iure vitae nam aperiam minus voluptatibus. Illum, reprehenderit, corporis perferendis architecto provident est doloremque ipsam ex ducimus natus dolore quas accusamus reiciendis dolorem mollitia laboriosam blanditiis id aliquam libero consectetur quos dolores nulla quia aut atque magnam molestias. Veniam, nihil, hic excepturi vel at nulla maiores voluptatem facilis non tempore perferendis perspiciatis inventore dolores. Tempora, quam, expedita vel maxime eum quis incidunt iure voluptatem fuga ipsum quibusdam asperiores debitis provident corporis delectus quaerat iste pariatur quisquam magnam voluptates nam nobis nemo aliquam molestias dolore et sit in accusamus labore natus odit facere reiciendis necessitatibus sed reprehenderit earum ex. Neque, laborum, iure, quo quod accusamus facere quia perspiciatis distinctio ab inventore magnam nostrum ut dolor quisquam atque! Excepturi, optio, libero, neque corporis in dolore inventore fugiat veritatis nostrum temporibus commodi alias sint veniam quaerat natus ad quos deserunt ea reprehenderit sapiente molestiae id accusamus totam dignissimos!
+				<div class="tags-block">
+					<div class="tags-block__row">
+						<h4 class="tags-block__title">Метки</h4>
+					</div>
+					<ul class="tag tag_mod">
+						<li><a href="#">дача <i class="i-cross"></i></a></li>
+						<li><a href="#">лето <i class="i-cross"></i></a></li>
+						<li><a href="#">май <i class="i-cross"></i></a></li>
+						<li><a href="#">новосибирск <i class="i-cross"></i></a></li>
+					</ul>
+					<div class="tags-block__row">
+						<h4 class="tags-block__title">Метки</h4>
+						<div class="tags-block__label">
+							<input type="text" class="input_green input_mini">
+							<i class="t-add"></i>
+							<i class="t-list"></i>
+						</div>
+					</div>
+					<div class="tags-block__row">
+						<h4 class="tags-block__title">Уровень доступа</h4>
+						<div class="tags-block__label">
+							<div class="select js-select">
+								<span><em class="js-select-text">доступно всем</em><i></i></span>
+								<input type="hidden" val="" class="js-select-input" value="2">
+								<div class="select__drop js-select-drop">
+									<ul>
+										<li data-id="1" class="is-selected">доступно всем</li>
+										<li data-id="2">1</li>
+										<li data-id="3">2</li>
+										<li data-id="4">3</li>
+										<li data-id="5">4</li>
+								  </ul>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="tags-block__row">
+						<h4 class="tags-block__title">Прикрепленная запись</h4>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<span></span>
+						</label>
+					</div>
+					<div class="tags-block__row tags-block__row_del">
+						<button class="btn-middle btn-orange">Опубликовать</button>
+						<a href="#" class="delete"><i class="i-del"></i>удалить</a>
+					</div>
+					<a href="#" class="preview"><i class="i-views_mod"></i> Предпросмотр</a>
+				</div>
 			</div>
 			<div class="l-content">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, voluptas, commodi illo assumenda ipsam perferendis necessitatibus vitae neque quisquam porro doloremque voluptatem cum numquam eligendi asperiores. Vitae, eligendi, tempore, fugiat cum dignissimos eos quidem commodi error voluptates inventore accusantium numquam odio beatae dolor laboriosam dicta debitis nesciunt unde exercitationem iure dolorum soluta praesentium aliquam dolore minima! Odit, dolorum, vel, obcaecati error provident architecto quisquam neque quia nemo quas mollitia ipsa nihil optio temporibus distinctio! Error, aperiam, fugit, beatae maxime ab saepe cumque dolores vitae nisi nemo a eveniet dolorem voluptates odit repellat iusto harum nulla porro eum possimus accusantium hic!
+				<div class="new-note">
+					<div class="new-note__meta">Тема</div>
+					<input type="text" class="input input_note input_w100" placeholder="Общее собрание СНТ">
+					<div class="new-note__meta">Текст</div>
+					<div class="new-note__article">
+						<div class="new-note__article-top">
+							<a href="#" class="b-bold"></a>
+							<a href="#" class="b-italic"></a>
+							<a href="#" class="b-underline"></a>
+							<a href="#" class="b-img"></a>
+							<a href="#" class="b-rec"></a>
+							<a href="#" class="b-link"></a>
+							<a href="#" class="b-calc"></a>
+							<a href="#" class="b-help"></a>
+							<a href="#" class="b-left"></a>
+							<a href="#" class="b-right"></a>
+							<a href="#" class="b-list"></a>
+							<a href="#" class="b-html"></a>
+						</div>
+						<div class="new-note__popup" style="top: 40px; left: 106px">
+							<div class="new-note__popup-title">Добавить фотографию</div>
+							<div class="load-file new-note__popup-row">
+								<input type="text" class="input" disabled>
+								<label for="" class="load-file__label">
+									<input type="file" class="load-file__file">
+									<button class="btn-orange btn-middle load-file__btn">ОБЗОР</button>
+								</label>
+							</div>
+							<div class="new-note__popup-row">
+								<input type="text" class="input new-note__popup-url input_w100" placeholder="Либо введите URL">
+							</div>
+							<button class="btn-middle btn-orange">ЗАГРУЗИТь</button>
+						</div>
+						<div class="new-note__article-cont" contenteditable="true"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="push"></div>

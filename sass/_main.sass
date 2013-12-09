@@ -4,7 +4,11 @@
 // pagination
 // article
 // comment
-//
+// page compose.html
+	// - new-note
+	// - new-note__popup
+	// - tags-block
+	// - 
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -300,10 +304,9 @@
 	margin-bottom: 15px
 	+clr
 	li
-		margin-left: 7px 
+		margin-right: 7px
+		margin-bottom: 8px
 		float: left
-		&:first-child
-			margin-left: 0
 	a
 		$bg: #F5F7EE 
 		display: inline-block
@@ -329,6 +332,19 @@
 			left: 4px
 			margin-top: -3px
 
+.tag_mod
+	margin-bottom: 0
+	a
+		padding: 5px 5px 5px 15px
+		$bg: #FFF
+		background: $bg 
+		&:hover
+			+transition(0.1s)
+			background: lighten($bg,1%)
+		&:after
+			+s(i-tag)
+	.i-cross
+		margin-left: 7px
 ///////////////////////////////// * comment  * ////////////////////////////////
 .comment
 	padding: 45px 0 0
@@ -447,4 +463,99 @@
 	.i-tree
 		margin: 0px 8px
 
+///////////////////////////////// * compose.html  * ////////////////////////////////
+.new-note
+	width: 630px
+.new-note__meta
+	margin-bottom: 15px
+	color: $dbl
+	font-weight: bold
+	+fs(13)
+.new-note__article
+	position: relative
+	border: 1px solid #accbe0
+	+br(2px)
+.new-note__article-top
+	padding: 5px 6px
+	background: #F8FDFF
+	border-bottom: 1px solid #ccdae4
+	font-size: 0
+	position: relative
+	+box
+	[class^="b-"], [class*=" b-"]
+		margin-right: 5px
+	.b-html
+		position: absolute
+		top: 15px
+		right: 14px
+.new-note__article-cont
+	padding: 10px
+	min-height: 219px
+	border-top: 1px solid #eef3f6
+	+box
 
+// new-note__popup
+.new-note__popup
+	width: 285px
+	padding: 25px 40px 15px 25px
+	position: absolute
+	z-index: 666
+	background-color: #fff
+	@include box-shadow(0 0 16px rgba(39,134,27,.51))
+	+box
+	&:after
+		content: ""
+		+arr(10,8,#fff,top)
+		position: absolute
+		top: -8px
+		left: 11px
+		z-index: 666
+	.input
+		padding: 7px
+	.new-note__popup-url
+		color: $dbl
+		font-weight: bold
+		+fs(13)
+		+placeholder($dbl)
+
+.new-note__popup-row
+	margin-bottom: 13px
+	.new-note__popup-title
+		margin-bottom: 20px
+		line-height: 1
+		margin-bottom: 20px
+		font-weight: bold
+		+ar
+		+fs(13)
+	.input
+		background: #FFF
+
+// tags-block
+.tags-block
+	padding: 20px 15px 20px 20px
+	background-color: #f5f7ee
+	@include box-shadow(inset 0 1px 1px #a2ac84)
+	+box
+	.tags-block__title
+		color: #828E5F
+		+fs(15)
+	.tags-block__row
+		margin-bottom: 15px
+		.select-checkbox
+			margin-top: 10px
+	.tags-block__row_del
+		.delete
+			margin-left: 10px
+
+.delete
+	text-decoration: none
+	color: #828E5F
+	.i-del
+		margin-right: 5px
+
+.preview
+	margin-left: 5px
+	text-decoration: none
+	color: #828E5F
+	.i-views_mod
+		margin-right: 8px
