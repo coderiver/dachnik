@@ -12,6 +12,7 @@
 // account
 // role
 // list
+// delivery
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -727,5 +728,46 @@
 				background: #FFF8F0
 				@include box-shadow(inset 0 0px 0px 1px #fff3e6)
 
+.history
+	margin-bottom: 35px
+	li
+		margin-bottom: 10px
+		font-size: 0
+	.i-mess2, span
+		vertical-align: middle
+		display: inline-block
+	span
+		color: $dbl
+		+ar
+		+fs(13)
+	.i-mess2
+		margin-right: 5px
 
+.message
+	margin-bottom: 35px
+	color: $dbl
 
+///////////////////////////////// * delivery  * ////////////////////////////////
+.delivery
+	width: 645px
+.delivery__create
+	margin-bottom: 15px
+	display: block
+	color: $or
+	.i-mail_or
+		margin-right: 10px
+
+.delivery-form
+	padding: 20px 30px 20px 15px
+	background: #F8EADD
+	+box
+.delivery__row
+	+clr
+.delivery__row-left
+	width: 560px
+	float: left
+	background: red 
+.delivery__row-right
+	width: 40px
+	float: right
+	background: orange 
