@@ -8,7 +8,9 @@
 	// - new-note
 	// - new-note__popup
 	// - tags-block
-	// - 
+// second-nav
+// account
+// role
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -111,6 +113,7 @@
 		outline: none
 		border: none
 		+transition(.2s)
+		color: #AA6730 
 		background-color: #fff
 		@include box-shadow(inset 0 0 4px rgba(166,97,60,.75))
 		+fs(13)
@@ -566,3 +569,71 @@
 	color: #828E5F
 	.i-views_mod
 		margin-right: 8px
+
+///////////////////////////////// * second-nav  * ////////////////////////////////
+.second-nav
+	margin-right: 5px
+	position: relative
+	z-index: 666
+	li
+		&.is-active
+			a
+				border: 1px solid #f3e2d3
+				border-left-width: 0
+				position: relative
+				&:after
+					content: ""
+					width: 1px
+					background: #fff 
+					position: absolute
+					left: -1px
+					top: 0
+					bottom: 0
+					
+	a
+		padding: 10px 5px 10px 30px
+		display: block
+		color: $gr
+		+box
+
+
+///////////////////////////////// * account  * ////////////////////////////////
+.account
+	padding: 20px 40px 20px 20px
+	border: 1px solid #f3e2d3
+	+box
+	.row
+		&:nth-child(odd)
+			background: #fff8f0
+.row
+	min-height: 32px
+	line-height: 32px
+	padding: 0px 10px 0px 17px
+	font-size: 0
+	+clr
+	.row__left
+		width: 329px
+		padding: 5px 0
+		display: inline-block
+		vertical-align: middle
+	.row__left_alight
+		vertical-align: top
+	.row__right
+		width: 270px
+		padding: 5px 0
+		display: inline-block
+		vertical-align: middle
+	.row__title
+		vertical-align: middle
+		display: inline-block
+		color: $dbl
+		+ar
+		+fs(13)
+	.select-checkbox, .input, .textarea, .select
+		vertical-align: middle
+	.select-checkbox
+		line-height: 1
+
+///////////////////////////////// * role  * ////////////////////////////////
+.role
+	margin-top: 30px

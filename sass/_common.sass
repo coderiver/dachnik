@@ -24,6 +24,10 @@ a
 	min-height: 100%
 	height: auto !important
 	height: 100%
+.h3
+	font-weight: bold
+	color: $gr
+	+fs(16) 
 .h4
 	width: 750px
 	margin-left: 5px
@@ -32,7 +36,14 @@ a
 	vertical-align: top
 	+fs(15)
 	+ar
-
+.title
+	margin-bottom: 20px
+	[class^="i-"], [class*=" i-"], .h3
+		display: inline-block
+	[class^="i-"], [class*=" i-"]
+		margin-right: 5px
+	.h3
+		text-transform: uppercase
 .bg
 	min-height: 470px
 	margin-top: -42px
