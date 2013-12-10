@@ -581,6 +581,8 @@
 				border: 1px solid #f3e2d3
 				border-left-width: 0
 				position: relative
+				color: $dbl 
+				text-decoration: none
 				&:after
 					content: ""
 					width: 1px
@@ -637,3 +639,49 @@
 ///////////////////////////////// * role  * ////////////////////////////////
 .role
 	margin-top: 30px
+	+clr
+	.wrap-member
+		margin-bottom: 5px
+		+clr
+		&.is-active
+			.i-add
+				+opacity(0)
+			.member
+				border: 1px solid #e4d2be
+				background: #FFF
+				.i-del
+					+opacity(1)
+	.member
+		float: right
+		margin-right: 5px
+	.i-add
+		float: right
+.member
+	height: 30px
+	line-height: 30px
+	padding: 0 10px
+	font-size: 0
+	border: 1px solid transparent
+	background: transparent 
+	+box
+	&:hover
+		border: 1px solid #e4d2be
+		background: #FFF
+		.i-del
+			+opacity(1)
+	[class^="i-"], [class*=" i-"]
+		vertical-align: middle
+		display: inline-block
+	.i-home_green
+		margin-right: 7px
+	.i-del
+		margin-left: 7px
+		+opacity(0)
+	a
+		+fs(13)
+		color: $or
+		vertical-align: middle
+		display: inline-block
+
+
+
