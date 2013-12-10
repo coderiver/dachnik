@@ -11,6 +11,7 @@
 // second-nav
 // account
 // role
+// list
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -682,6 +683,49 @@
 		color: $or
 		vertical-align: middle
 		display: inline-block
+
+.member_mod
+	padding: 0
+	height: auto
+	line-height: 1
+	border: none
+	&:hover
+		border: none
+		background: transparent
+///////////////////////////////// * list  * ////////////////////////////////
+.list
+	width: 340px
+	li
+		color: $dbl
+		+clr
+		&:nth-child(odd)
+			background: #FFF1E2
+			@include box-shadow(inset 0 0px 0px 1px #ffe6cd)
+	.list__left
+		width: 175px
+		padding: 10px 12px
+		float: left
+		+box
+	.list__right
+		width: 165px
+		padding: 10px 12px
+		float: left
+		+box
+	.list__100	
+		width: 100%
+		padding: 10px 12px
+		float: left
+		+box
+
+.list_double
+	li
+		&:nth-child(odd)
+			.list__left
+				background: #FFF1E2
+				@include box-shadow(inset 0 0px 0px 1px #ffe6cd)
+			.list__right
+				background: #FFF8F0
+				@include box-shadow(inset 0 0px 0px 1px #fff3e6)
 
 
 
