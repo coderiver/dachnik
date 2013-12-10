@@ -48,6 +48,10 @@
 	+s(i-clip2)
 .i-close
 	+s(i-close)
+.i-ok
+	+s(i-ok)
+.i-not
+	+s(i-not)
 .i-pen
 	+s(i-pen)
 .i-comm
@@ -70,6 +74,10 @@
 	+s(i-views)
 .i-list
 	+s(i-list)
+.i-list2
+	+s(i-list2)
+	&:active
+		+transform(scale(0.95))
 .i-settings
 	+s(i-settings)
 .i-settings2
@@ -131,21 +139,16 @@
 	vertical-align: top
 	cursor: pointer
 
-.t-add
-	+s(t-add)
-
-.t-list
-	+s(t-list)
-
 [class^="label-"], [class*="label-"]
 	padding: 3px 6px
 	color: #FFF
 	font-style: normal 
 	+br(2px)
-	+ar
+	+fs(11)
+	+ar 
 
 .label-green
-	background: #27861b 
+	background: #27861b
 
 
 

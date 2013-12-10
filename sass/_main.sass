@@ -13,6 +13,7 @@
 // role
 // list
 // delivery
+// mailing-story
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -551,6 +552,9 @@
 	.tags-block__title
 		color: #828E5F
 		+fs(15)
+	.tags-block__label
+		.input_green
+			vertical-align: middle
 	.tags-block__row
 		margin-bottom: 15px
 		.select-checkbox
@@ -747,6 +751,12 @@
 	margin-bottom: 35px
 	color: $dbl
 
+.status
+	color: $gr
+	+fs(13)
+	+ar 
+	.i-ok
+		margin-right: 7px
 ///////////////////////////////// * delivery  * ////////////////////////////////
 .delivery
 	width: 645px
@@ -756,18 +766,97 @@
 	color: $or
 	.i-mail_or
 		margin-right: 10px
+.delivery__meta
+	margin-left: 3px
+	line-height: 1
+	margin-bottom: 8px
+	font-weight: bold
+	color: $dbl 
+	+ar
+	+fs(13)
 
 .delivery-form
+	margin-bottom: 20px
 	padding: 20px 30px 20px 15px
 	background: #F8EADD
+	position: relative
 	+box
+	&:after
+		content: ""
+		+arr(13,7,#F8EADD,top)
+		position: absolute
+		top: -7px
+		left: 28px
 .delivery__row
+	margin-bottom: 20px
 	+clr
 .delivery__row-left
 	width: 560px
 	float: left
-	background: red 
+	+clr
 .delivery__row-right
 	width: 40px
 	float: right
-	background: orange 
+	text-align: right
+.delivery__filter
+	font-size: 0
+	.status
+		margin-right: 20px
+		display: inline-block
+		vertical-align: middle
+	.date
+		display: inline-block
+		vertical-align: middle
+		color: $or
+		+ar
+		+fs(13)
+	.select
+		display: inline-block
+		vertical-align: middle
+		margin-left: 9px
+
+///////////////////////////////// * mailing-story * ////////////////////////////////
+.mailing-story
+	table
+		width: 100%
+	thead
+		height: 42px
+		line-height: 42px
+		background: #aa6730
+		font-weight: bold
+		color: #FFF
+		+ar
+		+fs(13)
+		td
+			padding: 0
+			color: #FFF
+	tbody
+		vertical-align: top
+		tr
+			border-top: 1px solid #F3E2D3
+			&:nth-child(even)
+				background: #fdf9f5
+			&:first-child
+				border-top: none 
+		td
+			padding: 17px 0
+			color: $dbl
+			+ar
+			+fs(13)
+			+box
+		.result
+			text-align: center
+			[class^="i-"], [class*=" i-"]
+				margin-left: -7px
+			
+	.num
+		width: 45px
+		text-align: center
+	.date
+		width: 75px
+	.method
+		width: 75px
+	.state
+		width: 85px
+	.result
+		width: 85px

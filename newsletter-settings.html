@@ -147,13 +147,152 @@
 						<a href="" class="delivery__create"><i class="i-mail_or"></i>Создать новую рассылку</a>
 						<div class="delivery-form">
 							<div class="delivery__row">
+								<div class="delivery__meta">Кому</div>
 								<div class="delivery__row-left">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, obcaecati, similique ab perspiciatis adipisci molestias saepe incidunt accusantium ullam cumque dicta necessitatibus asperiores fuga explicabo mollitia reiciendis quis maxime sunt fugit placeat. Ex, corporis, adipisci officiis ab error perferendis harum provident. Dicta, molestias, repellendus aspernatur quam doloremque a illum doloribus.
+									<input type="text" class="input input_w100 input_brown" placeholder="Павлов Виктор">
 								</div>
 								<div class="delivery__row-right">
-									aaa
+									<i class="t-add"></i>
 								</div>
 							</div>
+							<div class="delivery__row">
+								<div class="delivery__meta">Текст сообщения</div>
+								<div class="delivery__row-left">
+									<textarea class="textarea textarea_brown"></textarea>
+								</div>
+								<div class="delivery__row-right"></div>
+							</div>
+							<div class="delivery__row">
+								<div class="delivery__meta">Дата отправки</div>
+								<div class="delivery__row-left">
+									<div class="delivery__filter">
+										<div class="status"><i class="i-ok"></i>Немедленно</div>
+										<a href="#" class="date">По дате</a>
+										<div class="select select_day select_brown js-select">
+											<span><em class="js-select-text">23</em><i></i></span>
+											<input type="hidden" val="" class="js-select-input" value="2">
+											<div class="select__drop js-select-drop">
+												<ul>
+													<li data-id="1" class="is-selected">23</li>
+													<li data-id="2">1</li>
+													<li data-id="3">2</li>
+													<li data-id="4">3</li>
+													<li data-id="5">4</li>
+											  </ul>
+											</div>
+										</div>
+										<div class="select select_month select_brown js-select">
+											<span><em class="js-select-text">Сентябрь</em><i></i></span>
+											<input type="hidden" val="" class="js-select-input" value="2">
+											<div class="select__drop js-select-drop">
+												<ul>
+													<li data-id="1" class="is-selected">Сентябрь</li>
+													<li data-id="2">Июнь</li>
+													<li data-id="3">2</li>
+													<li data-id="4">3</li>
+													<li data-id="5">4</li>
+											  </ul>
+											</div>
+										</div>
+										<div class="select select_year select_brown js-select">
+											<span><em class="js-select-text">2013</em><i></i></span>
+											<input type="hidden" val="" class="js-select-input" value="2">
+											<div class="select__drop js-select-drop">
+												<ul>
+													<li data-id="1" class="is-selected">2013</li>
+													<li data-id="2">1</li>
+													<li data-id="3">2</li>
+													<li data-id="4">3</li>
+													<li data-id="5">4</li>
+											  </ul>
+											</div>
+										</div>
+										<div class="select select_date select_brown js-select">
+											<span><em class="js-select-text">10:00</em><i></i></span>
+											<input type="hidden" val="" class="js-select-input" value="2">
+											<div class="select__drop js-select-drop">
+												<ul>
+													<li data-id="1" class="is-selected">10:00</li>
+													<li data-id="2">1</li>
+													<li data-id="3">2</li>
+													<li data-id="4">3</li>
+													<li data-id="5">4</li>
+											  </ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="delivery__row-right"></div>
+							</div>
+							<div class="delivery__row">
+								<div class="delivery__meta">Способ доставки</div>
+								<div class="delivery__meta"></div>
+								<div class="delivery__row-left">
+									<div class="wrap-radio">
+										<label class="select-radio">
+											<input type="radio" name="type">
+											<span>SMS</span>
+										</label>
+									</div>
+									<div class="wrap-radio">
+										<label class="select-radio">
+											<input type="radio" name="type">
+											<span>email</span>
+										</label>
+									</div>
+									<div class="wrap-radio">
+										<label class="select-radio">
+											<input type="radio" name="type">
+											<span>личное сообщение</span>
+										</label>
+									</div>
+								</div>
+								<div class="delivery__row-right"></div>
+							</div>
+							<div class="btn-middle btn-orange">создать</div>
+						</div>
+						<div class="mailing-story">
+							<div class="title">
+								<i class="i-list"></i><h3 class="h3">История рассылок</h3>
+							</div>
+							<table>
+								<thead>
+									<tr>
+										<td class="num">№</td>
+										<td class="date">Дата</td>
+										<td class="method">Способ</td>
+										<td class="state">Статус</td>
+										<td class="result">Результат</td>
+										<td class="text">Текст</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="num">2</td>
+										<td class="date">12.06.13</td>
+										<td class="method">SMS</td>
+										<td class="state"><i class="label-green">разослано</i></td>
+										<td class="result"><i class="i-ok"></i></td>
+										<td class="text">Действие игры разворачивается  в роли бойца в Нью в начале примеро того  XXI века. борющегося за выживание в опустошенном смертельным вирусом новая книга котор</td>
+									</tr>
+									<tr>
+										<td class="num">2</td>
+										<td class="date">12.06.13</td>
+										<td class="method">SMS</td>
+										<td class="state"><i class="label-green">разослано</i></td>
+										<td class="result"><i class="i-not"></i></td>
+										<td class="text">Действие игры разворачивается  в роли бойца в Нью в начале примеро того  XXI века. борющегося за выживание в опустошенном смертельным вирусом новая книга котор</td>
+									</tr>
+									<tr>
+										<td class="num">2</td>
+										<td class="date">12.06.13</td>
+										<td class="method">SMS</td>
+										<td class="state"><i class="label-green">разослано</i></td>
+										<td class="result"><i class="i-ok"></i></td>
+										<td class="text">Действие игры разворачивается  в роли бойца в Нью в начале примеро того  XXI века. борющегося за выживание в опустошенном смертельным вирусом новая книга котор</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
