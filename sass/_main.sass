@@ -14,6 +14,7 @@
 // list
 // delivery
 // mailing-story
+//  profile.html
 ///////////////////////////////// *  * ////////////////////////////////
 
 ///////////////////////////////// * messages * ////////////////////////////////
@@ -860,3 +861,65 @@
 		width: 85px
 	.result
 		width: 85px
+
+///////////////////////////////// * page profile.html * ////////////////////////////////
+.banner
+	width: 235px
+	height: 365px
+	margin-bottom: 20px
+	overflow: hidden
+	position: relative
+	.h2
+		width: 235px
+		position: absolute
+		bottom: 40px
+		font-weight: normal
+		color: #FFF
+		+fs(40)
+		span
+			text-align: center
+			display: inherit
+
+.weather
+	width: 235px
+	margin-bottom: 25px
+	img
+		max-width: 100%
+
+.interview
+
+.interview__title
+	height: 32px
+	line-height: 32px
+	padding: 0 10px
+	background: #f5f7ee
+	+box
+	.i-arr_gr
+		margin-right: 8px
+	span
+		vertical-align: middle
+		font-weight: bold
+		color: $gr
+		+fs(16)
+
+.interview__question
+	margin: 15px 8px 35px
+	border: 1px solid #dbebef
+	position: relative
+	padding: 15px
+	+box
+	+br(2px)
+	&:after
+		content: ""
+		position: absolute
+		bottom: -14px
+		left: 23px
+		+s(i-interview_border)
+	span
+		font-weight: bold
+		color: #628AA3
+		+fs(14)
+
+.interview__row
+	margin: 0 10px 15px
+	
