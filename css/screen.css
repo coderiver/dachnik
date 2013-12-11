@@ -589,6 +589,7 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .comment__item:hover { background: #fff9e2; }
 .comment__item:hover .comment__icons { display: block; }
 .comment__item:hover .btn-orange { color: white; background: #ff8532; }
+.comment__item.is-notree:after, .comment__item.is-notree:before { content: none; }
 .comment__item .comment__icons { display: none; }
 .comment__item .btn-orange { background: transparent; color: #ff8532; }
 .comment__item.is-hidden { width: 100%; }
