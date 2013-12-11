@@ -52,6 +52,20 @@ a
 		margin-left: 5px
 	.h3
 		text-transform: uppercase
+		vertical-align: middle
+.title-mod
+	margin-bottom: 3px
+	line-height: 1
+	font-weight: bold
+	text-decoration: underline
+	color: $gr
+	+fs(14)
+	&:hover
+		text-decoration: none
+	a
+		font-weight: bold
+		color: $gr
+		+fs(14)
 .bg
 	min-height: 470px
 	margin-top: -42px
@@ -146,6 +160,11 @@ a
 			+arr(9,6,#828e5f, bottom)
 	ul
 		display: none
+	.user-login
+		span
+			vertical-align: middle
+		.i-lock2
+			margin-right: 10px
 		
 nav
 	position: relative
@@ -285,3 +304,5 @@ nav
 		top: 12px
 		right: 0px
 		+clr
+.page__top_mod
+	margin-bottom: 20px
