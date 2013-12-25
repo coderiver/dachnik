@@ -31,6 +31,8 @@
 .messages__item
 	+clr
 	border-top: 1px solid #F3E2D3
+	&:hover
+		background: #fff9e2
 	&:first-child
 		border-top: none 
 	&.is-in, &.is-out
@@ -40,6 +42,14 @@
 				position: absolute
 				right: 0px
 				top: 17px
+	.textarea
+		min-height: inherit
+		background: transparent 
+		border: none
+		color: #48606f
+		font-family: "Calibri", "Helvetica", sans-serif
+		resize: none
+		+fs(13)
 	&.is-in
 		position: relative
 		.messages__item-user
@@ -75,7 +85,7 @@
 			vertical-align: middle
 			display: inline-block
 		.i-basc
-			vertical-align: top
+			// vertical-align: top
 			display: inline-block
 			margin-right: 8px
 		.i-mess
@@ -84,6 +94,7 @@
 			text-decoration: none
 		a
 			margin-right: 5px
+			color: #FF8532
 	.messages__item-text
 		padding: 11px
 		overflow: hidden
@@ -113,7 +124,7 @@
 ///////////////////////////////// * filter * ////////////////////////////////
 .filter
 	padding: 20px 12px
-	background-color: #f8eadc
+	background-color: #f8eadd
 	@include box-shadow(inset 0 -1px 2px rgba(169,121,73,.25))
 	+box
 	.filter__search
@@ -335,9 +346,6 @@
 		+br(3px)
 		+transition(0.1s)
 		+fs(11)
-		&:hover
-			+transition(0.1s)
-			background: lighten($bg,2%)
 		&:after
 			content: ""
 			width: 6px
@@ -357,7 +365,7 @@
 		background: $bg 
 		&:hover
 			+transition(0.1s)
-			background: lighten($bg,1%)
+			background: darken($bg,2%)
 		&:after
 			+s(i-tag)
 	.i-cross
@@ -379,6 +387,7 @@
 		margin-left: 35px
 
 .comment__item
+	width: 600px
 	margin-bottom: 25px
 	padding: 15px 15px 10px 10px
 	display: inline-block
@@ -416,7 +425,7 @@
 		background: transparent
 		color: $or
 	&.is-hidden
-		width: 100%
+		// width: 100%
 		.comment__item-user
 			position: relative
 			&:after
@@ -579,6 +588,9 @@
 		position: absolute
 		left: -10px
 		top: 28px
+	.i-add, .i-list2, .delete
+		&:hover
+			opacity: 0.8 
 	.tags-block__title
 		color: #828E5F
 		+fs(15)
@@ -602,7 +614,8 @@
 .preview
 	margin-left: 5px
 	text-decoration: none
-	color: #828E5F
+	font-weight: bold
+	color: #27861b
 	.i-views_mod
 		margin-right: 8px
 
@@ -637,12 +650,14 @@
 
 ///////////////////////////////// * account  * ////////////////////////////////
 .account
-	padding: 20px 40px 20px 20px
-	border: 1px solid #f3e2d3
-	+box
 	.row
 		&:nth-child(odd)
 			background: #fff8f0
+.box
+	min-height: 300px
+	padding: 20px 40px 20px 20px
+	border: 1px solid #f3e2d3
+	+box
 .row
 	min-height: 32px
 	line-height: 32px
@@ -658,6 +673,7 @@
 		vertical-align: top
 	.row__right
 		width: 270px
+		min-height: 30px
 		padding: 5px 0
 		display: inline-block
 		vertical-align: middle
@@ -879,7 +895,7 @@
 		vertical-align: top
 		tr
 			border-top: 1px solid #F3E2D3
-			&:nth-child(even)
+			&:hover
 				background: #fdf9f5
 			&:first-child
 				border-top: none 
@@ -973,20 +989,43 @@
 		float: right
 	.list
 		float: left
+.info_mod
+	+clr
+	.title
+		float: left
+	.map
+		float: right
+		margin-right: 15px
+
+.map
+	display: inline-block
+	margin-bottom: 20px
+	&:hover
+		.popup
+			display: block
+	.i-map
+		margin-right: 8px
+		z-index: 666
+		position: relative
+	a
+		color: $or
+		font-weight: bold
+		vertical-align: middle
+		text-decoration: none
+		z-index: 666
+		position: relative
+
 // popup
 .popup
+	display: none
 	min-width: 165px 
-	padding: 15px
+	padding: 50px 15px 15px
 	background-color: #fff
 	position: absolute
 	top: -15px
 	right: -15px
 	@include box-shadow(0 0 16px rgba(39,134,27,.51))
 	+box
-	.popup__map
-		margin-bottom: 20px
-		.i-map
-			margin-right: 8px
 	a
 		color: $or
 		vertical-align: middle

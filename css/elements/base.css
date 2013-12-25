@@ -11,6 +11,8 @@
 
 .btn_mess2 { float: right; margin: 0 22px 17px 0; }
 
+.btn-save { margin-bottom: 20px; }
+
 [class^="i-"], [class*=" i-"] { display: inline-block; vertical-align: middle; }
 
 .i-serch { background: url('../../img/icons-s02a36d6d22.png') 0 -1955px no-repeat; width: 16px; height: 18px; }
@@ -134,7 +136,8 @@
 
 .i-pag_next { background: url('../../img/icons-s02a36d6d22.png') 0 -1613px no-repeat; width: 21px; height: 21px; }
 
-[class^="b-"], [class*=" b-"] { display: inline-block; vertical-align: middle; }
+[class^="b-"], [class*=" b-"] { display: inline-block; vertical-align: middle; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; }
+[class^="b-"]:hover, [class*=" b-"]:hover { -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 
 .b-bold { background: url('../../img/icons-s02a36d6d22.png') 0 -571px no-repeat; width: 29px; height: 29px; }
 

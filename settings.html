@@ -49,120 +49,133 @@
 				<i class="i-settings"></i>
 				<h2 class="h2">Управление аккаунтом</h2>
 			</div>
-			<div class="l-sidebar l-sidebar_r">
-				<ul class="second-nav">
-					<li class="is-active"><a href="#">Управление аккаунтом</a></li>
-					<li><a href="#">Инструмент</a></li>
-					<li><a href="#">Второй инструмент</a></li>
-					<li><a href="#">Третий инструмент</a></li>
-				</ul>
-			</div>
-			<div class="l-content">
-				<div class="account">
-					<div class="title">
-						<i class="i-settings2"></i><h3 class="h3">Настройки аккаунта</h3>
+			<div class="js-tab-group">
+				<div class="l-sidebar l-sidebar_r">
+					<ul class="js-tab second-nav">
+						<li><a href="js-tab1">Управление аккаунтом</a></li>
+						<li><a href="js-tab2">Инструмент</a></li>
+						<li><a href="js-tab3">Второй инструмент</a></li>
+						<li class="is-active"><a href="js-tab4">Третий инструмент</a></li>
+					</ul>
+				</div>
+				<div class="l-content">
+					<div class="js-tab1 js-tab-cont">
+						<div class="box"></div>
 					</div>
-					<div class="row">
-						<div class="row__left">
-							<span class="row__title">Настрйока первая</span>
-						</div>
-						<div class="row__right">
-							<label class="select-checkbox select-checkbox_mod">
-								<input type="checkbox" value="">
-								<span></span>
-							</label>
-						</div>
+					<div class="js-tab2 js-tab-cont">
+						<div class="box"></div>
 					</div>
-					<div class="row">
-						<div class="row__left">
-							<span class="row__title">Вторая настройка</span>
-						</div>
-						<div class="row__right">
-							<input type="text" class="input input_w100" placeholder="Значение">
-						</div>
+					<div class="js-tab3 js-tab-cont">
+						<div class="box"></div>
 					</div>
-					<div class="row">
-						<div class="row__left">
-							<span class="row__title">Третья настройка</span>
-						</div>
-						<div class="row__right">
-							<div class="select js-select">
-								<span><em class="js-select-text">Значение</em><i></i></span>
-								<input type="hidden" val="" class="js-select-input" value="2">
-								<div class="select__drop js-select-drop">
-									<ul>
-										<li data-id="1" class="is-selected">Значение</li>
-										<li data-id="2">1</li>
-										<li data-id="3">2</li>
-										<li data-id="4">3</li>
-										<li data-id="5">4</li>
-								  </ul>
+					<div class="js-tab4 js-tab-cont">
+						<div class="box account">
+							<div class="title">
+								<i class="i-settings2"></i><h3 class="h3">Настройки аккаунта</h3>
+							</div>
+							<button class="btn-middle btn-orange btn-save">сохранить</button>
+							<div class="row">
+								<div class="row__left">
+									<span class="row__title">Настрйока первая</span>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="row__left row__left_alight">
-							<span class="row__title">Четвертая</span>
-						</div>
-						<div class="row__right">
-							<textarea class="textarea"></textarea>
-						</div>
-					</div>
-					<div class="role">
-						<div class="title">
-							<i class="i-user_gr"></i><h3 class="h3">Настройки аккаунта</h3>
-						</div>
-						<div class="row">
-							<div class="row__left">
-								<span class="row__title">Председатель</span>
-							</div>
-							<div class="row__right">
-								<a href="#" class="i-add"></a>
-								<div class="member">
-									<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="row__left row__left_alight">
-								<span class="row__title">Бухгалтер</span>
-							</div>
-							<div class="row__right">
-								<div class="wrap-member">
-									<a href="#" class="i-add"></a>
-									<div class="member">
-										<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
-									</div>
-								</div>
-								<div class="wrap-member is-active">
-									<a href="#" class="i-add"></a>
-									<div class="member">
-										<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="row__left">
-								<span class="row__title">Правление</span>
-							</div>
-							<div class="row__right">
 								<div class="row__right">
-									<a href="#" class="i-add"></a>
-									<div class="member">
-										<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
+									<label class="select-checkbox select-checkbox_mod">
+										<input type="checkbox" value="">
+										<span></span>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="row__left">
+									<span class="row__title">Вторая настройка</span>
+								</div>
+								<div class="row__right">
+									<input type="text" class="input input_w100" placeholder="Значение">
+								</div>
+							</div>
+							<div class="row">
+								<div class="row__left">
+									<span class="row__title">Третья настройка</span>
+								</div>
+								<div class="row__right">
+									<div class="select js-select">
+										<span><em class="js-select-text">Значение</em><i></i></span>
+										<input type="hidden" val="" class="js-select-input" value="2">
+										<div class="select__drop js-select-drop">
+											<ul>
+												<li data-id="1" class="is-selected">Значение</li>
+												<li data-id="2">1</li>
+												<li data-id="3">2</li>
+												<li data-id="4">3</li>
+												<li data-id="5">4</li>
+										  </ul>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="row__left">
-								<span class="row__title">Администратор аккаунта</span>
-							</div>
-							<div class="row__right">
+							<div class="row">
+								<div class="row__left row__left_alight">
+									<span class="row__title">Четвертая</span>
+								</div>
 								<div class="row__right">
-									<a href="#" class="i-add"></a>
+									<textarea class="textarea"></textarea>
+								</div>
+							</div>
+							<div class="role">
+								<div class="title">
+									<i class="i-user_gr"></i><h3 class="h3">Роли участников</h3>
+								</div>
+								<div class="row">
+									<div class="row__left">
+										<span class="row__title">Председатель</span>
+									</div>
+									<div class="row__right">
+										<a href="#" class="i-add"></a>
+										<div class="member">
+											<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="row__left row__left_alight">
+										<span class="row__title">Бухгалтер</span>
+									</div>
+									<div class="row__right">
+										<div class="wrap-member">
+											<div class="member">
+												<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
+											</div>
+										</div>
+										<div class="wrap-member">
+											<a href="#" class="i-add"></a>
+											<div class="member">
+												<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="row__left">
+										<span class="row__title">Правление</span>
+									</div>
+									<div class="row__right">
+										<div class="row__right">
+											<a href="#" class="i-add"></a>
+											<div class="member">
+												<a href="#"><i class="i-home_green"></i><span>Виктор Козырев</span><i class="i-del"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="row__left">
+										<span class="row__title">Администратор аккаунта</span>
+									</div>
+									<div class="row__right">
+										<div class="row__right">
+											<a href="#" class="i-add"></a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
