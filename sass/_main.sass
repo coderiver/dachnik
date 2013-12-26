@@ -110,7 +110,7 @@
 	border: 1px solid #f3e2d3
 	&:first-child
 		border-top: 1px solid #f3e2d3
-.messages__item_repply
+.messages__item_repply 
 	margin: 0 15px 20px 80px
 	background: #FFF6EE
 	border: none
@@ -283,14 +283,15 @@
 	+fs(13)
 	.i-views
 		margin-right: 5px
-
+.article-wrap
+	margin-bottom: 25px
 .article
 	border-bottom: 1px solid #EAEEDB 
 	color: $dbl
 	overflow: hidden
 	+fs(13)
 	p
-		margin-bottom: 15px
+		margin-bottom: 15px 
 	a
 		color: $gr
 	.article__media
@@ -304,7 +305,23 @@
 	[class^="btn-"], [class*=" btn-"]
 		margin-bottom: 15px
 		color: #FFF
-		text-decoration: none 
+		text-decoration: none
+.article_mod
+	padding-top: 25px
+	padding-right: 20px
+	&:first-child
+		padding-top: 0
+	.article__top
+		.h4
+			width: 420px
+			margin-right: 55px
+	.article__author
+		[class^="i-"], [class*=" i-"]
+			margin-right: 7px
+		span
+			margin: 0 15px 0 10px
+	.tag
+		margin-bottom: 0 
 .article__top
 	margin-bottom: 8px
 	.h4
