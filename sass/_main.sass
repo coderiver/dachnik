@@ -389,24 +389,51 @@
 		margin-left: 7px
 ///////////////////////////////// * comment  * ////////////////////////////////
 .comment
-	padding: 45px 0 0
+	margin-top: 35px
 	+box
+	overflow: hidden
 .comment__num
-	margin-bottom: 25px
+	padding-bottom: 25px
+	background: #fff
+	position: relative
+	z-index: 1234
 	color: $gr
 	font-weight: bold
 	+fs(16)
 	.i-comm2
 		margin-right: 5px
-
+.comment__item-in
+	padding: 15px 15px 10px 10px
+	position: relative
+	z-index: 1666
+	background: #FFF
+	&:after
+		content: ""
+		width: 600px
+		height: 25px
+		background: #fff
+		position: absolute
+		left: 34px
+		bottom: -26px
+	&:hover	
+		background: #FFF9E2
+		.comment__icons
+			display: block
+		.btn-orange
+			color: #fff
+			background: $or
+// .is-level
+// 	background: #FFF 
+// 	.comment__item
+// 		&:before
+// 			top: -5000px
 .comment__in
 	.comment__pull
 		margin-left: 35px
-
+		position: relative
 .comment__item
 	width: 600px
 	margin-bottom: 25px
-	padding: 15px 15px 10px 10px
 	display: inline-block
 	border: 1px solid #ccdee3
 	position: relative
@@ -417,7 +444,7 @@
 		background: #D2E3EA 
 		position: absolute
 		left: -21px
-		top: -26px
+		top: -5526px
 		bottom: 50%
 	&:after
 		content: ""
@@ -426,13 +453,6 @@
 		left: -25px
 		top: 50%
 		margin-top: -5px
-	&:hover	
-		background: #FFF9E2
-		.comment__icons
-			display: block
-		.btn-orange
-			color: #fff
-			background: $or
 	&.is-notree
 		&:after, &:before
 			content: none
