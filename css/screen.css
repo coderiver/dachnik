@@ -709,16 +709,20 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .second-nav li.is-active a:after { content: ""; width: 1px; background: white; position: absolute; left: -1px; top: 0; bottom: 0; }
 .second-nav a { padding: 10px 5px 10px 30px; display: block; color: #27861b; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+.account { *zoom: 1; }
+.account:before, .account:after { content: ""; display: table; }
+.account:after { clear: both; }
 .account .row:nth-child(odd) { background: #fff8f0; }
+.account .btn-save { margin-top: 20px; float: right; }
 
 .box { min-height: 300px; padding: 20px 40px 20px 20px; border: 1px solid #f3e2d3; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .row { min-height: 32px; line-height: 32px; padding: 0px 10px 0px 17px; font-size: 0; *zoom: 1; }
 .row:before, .row:after { content: ""; display: table; }
 .row:after { clear: both; }
-.row .row__left { width: 329px; padding: 5px 0; display: inline-block; vertical-align: middle; }
+.row .row__left { width: 190px; padding: 5px 0; display: inline-block; vertical-align: middle; }
 .row .row__left_alight { vertical-align: top; }
-.row .row__right { width: 270px; min-height: 30px; padding: 5px 0; display: inline-block; vertical-align: middle; }
+.row .row__right { width: 409px; min-height: 30px; padding: 5px 0; display: inline-block; vertical-align: middle; }
 .row .row__title { vertical-align: middle; display: inline-block; color: #48606f; font-family: Arial, Tahoma, sans-serif; font-size: 13px; font-size: 1.3rem; }
 .row .select-checkbox, .row .input, .row .textarea, .row .select { vertical-align: middle; }
 .row .select-checkbox { line-height: 1; }
@@ -726,7 +730,7 @@ nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; positi
 .role { margin-top: 30px; *zoom: 1; }
 .role:before, .role:after { content: ""; display: table; }
 .role:after { clear: both; }
-.role .wrap-member { margin-bottom: 5px; *zoom: 1; }
+.role .wrap-member { float: right; margin-bottom: 5px; *zoom: 1; }
 .role .wrap-member:before, .role .wrap-member:after { content: ""; display: table; }
 .role .wrap-member:after { clear: both; }
 .role .wrap-member.is-active .i-add { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
