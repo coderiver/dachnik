@@ -42,7 +42,7 @@
 				position: absolute
 				right: 0px
 				top: 17px
-	.textarea
+	.textarea, 	.messages__item-cont
 		min-height: inherit
 		background: transparent 
 		border: none
@@ -269,8 +269,11 @@
 		+s(i-pag_prew)
 ///////////////////////////////// * article * ////////////////////////////////
 .comm
-	color: #4A6271 
+	color: #4A6271
+	text-decoration: none
 	+fs(13)
+	&:hover
+		text-decoration: underline
 	.i-comm
 		margin-right: 5px
 .comm_mod
@@ -279,8 +282,11 @@
 		color: $or
 
 .views
-	color: #4A6271 
+	color: #4A6271
+	text-decoration: none
 	+fs(13)
+	&:hover
+		text-decoration: underline
 	.i-views
 		margin-right: 5px
 .article-wrap

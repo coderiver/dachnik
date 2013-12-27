@@ -12,9 +12,6 @@
 		background: #F5F7EE 
 		+br(10px)
 
-	
-
-	
 .tags
 	margin-top: 12px
 	display: inline-block
@@ -48,6 +45,19 @@
 
 .calendar
 	position: relative
+	&:hover
+		.calendar__pic
+			&:before
+				background: #27861B
+	&.is-active
+		.calendar__month
+			display: none
+		.calendar__display
+			display: block
+		.calendar__pic
+			top: 35px
+	.calendar__display
+		display: none
 	.calendar__pic
 		position: absolute
 		top: 0
@@ -63,8 +73,7 @@
 			+br(50%)
 			display: block
 			background: #9A5F2B 
-	.calendar__pic_top
-		top: 35px
+
 .is-active
 	.calendar__pic
 		&:before
@@ -89,14 +98,14 @@
 	
 .display__calendar
 	position: relative
-	padding: 17px 0 12px 45px
+	padding: 17px 0 12px 0px
+	text-align: center
 	.calendar__pref
 		position: absolute
 		top: 16px
 		left: 16px
-		transform: rotate(180deg)
 		display: inline-block
-		+s(next)
+		+s(i-pag_prew)
 	.calendar__next
 		position: absolute
 		top: 16px
@@ -104,7 +113,7 @@
 		display: inline-block
 		+s(next)
 	.calendar__month_b
-		margin: 22px 0 0 33px
+		margin: 22px 0 0 0px
 		color: #48606F 
 		font-family: Arial 
 		font-weight: bold
@@ -124,9 +133,14 @@
 			font-size: 12px 
 			display: inline-block
 			a
+				height: 17px
 				padding-left: 8px
 				text-decoration: none
 				color: #464552
+				display: block
+				&:hover
+					background: #2E9B20
+					color: #fff 
 		.table__weekdays
 			border: 1px solid #f2f4e7
 		.table__weekend
