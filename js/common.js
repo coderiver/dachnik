@@ -69,6 +69,12 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$(".cover-calengar .js-calendar").click(function() {
+		$(".calendar").removeClass("is-active");
+		$(this).parent().addClass("is-active");
+		return false;
+	});
+
 	function tab() {
 	  $(".js-tab").each(function(){
       var tab_link = $(this).find("a");

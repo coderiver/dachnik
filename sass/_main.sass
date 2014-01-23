@@ -42,7 +42,7 @@
 				position: absolute
 				right: 0px
 				top: 17px
-	.textarea
+	.textarea, 	.messages__item-cont
 		min-height: inherit
 		background: transparent 
 		border: none
@@ -110,7 +110,7 @@
 	border: 1px solid #f3e2d3
 	&:first-child
 		border-top: 1px solid #f3e2d3
-.messages__item_repply
+.messages__item_repply 
 	margin: 0 15px 20px 80px
 	background: #FFF6EE
 	border: none
@@ -269,8 +269,11 @@
 		+s(i-pag_prew)
 ///////////////////////////////// * article * ////////////////////////////////
 .comm
-	color: #4A6271 
+	color: #4A6271
+	text-decoration: none
 	+fs(13)
+	&:hover
+		text-decoration: underline
 	.i-comm
 		margin-right: 5px
 .comm_mod
@@ -279,18 +282,22 @@
 		color: $or
 
 .views
-	color: #4A6271 
+	color: #4A6271
+	text-decoration: none
 	+fs(13)
+	&:hover
+		text-decoration: underline
 	.i-views
 		margin-right: 5px
-
+.article-wrap
+	margin-bottom: 25px
 .article
 	border-bottom: 1px solid #EAEEDB 
 	color: $dbl
 	overflow: hidden
 	+fs(13)
 	p
-		margin-bottom: 15px
+		margin-bottom: 15px 
 	a
 		color: $gr
 	.article__media
@@ -304,7 +311,23 @@
 	[class^="btn-"], [class*=" btn-"]
 		margin-bottom: 15px
 		color: #FFF
-		text-decoration: none 
+		text-decoration: none
+.article_mod
+	padding-top: 25px
+	padding-right: 20px
+	&:first-child
+		padding-top: 0
+	.article__top
+		.h4
+			width: 420px
+			margin-right: 55px
+	.article__author
+		[class^="i-"], [class*=" i-"]
+			margin-right: 7px
+		span
+			margin: 0 15px 0 10px
+	.tag
+		margin-bottom: 0 
 .article__top
 	margin-bottom: 8px
 	.h4
@@ -372,24 +395,51 @@
 		margin-left: 7px
 ///////////////////////////////// * comment  * ////////////////////////////////
 .comment
-	padding: 45px 0 0
+	margin-top: 35px
 	+box
+	overflow: hidden
 .comment__num
-	margin-bottom: 25px
+	padding-bottom: 25px
+	background: #fff
+	position: relative
+	z-index: 1234
 	color: $gr
 	font-weight: bold
 	+fs(16)
 	.i-comm2
 		margin-right: 5px
-
+.comment__item-in
+	padding: 15px 15px 10px 10px
+	position: relative
+	z-index: 1666
+	background: #FFF
+	&:after
+		content: ""
+		width: 600px
+		height: 25px
+		background: #fff
+		position: absolute
+		left: 34px
+		bottom: -26px
+	&:hover	
+		background: #FFF9E2
+		.comment__icons
+			display: block
+		.btn-orange
+			color: #fff
+			background: $or
+// .is-level
+// 	background: #FFF 
+// 	.comment__item
+// 		&:before
+// 			top: -5000px
 .comment__in
 	.comment__pull
 		margin-left: 35px
-
+		position: relative
 .comment__item
 	width: 600px
 	margin-bottom: 25px
-	padding: 15px 15px 10px 10px
 	display: inline-block
 	border: 1px solid #ccdee3
 	position: relative
@@ -400,7 +450,7 @@
 		background: #D2E3EA 
 		position: absolute
 		left: -21px
-		top: -26px
+		top: -5526px
 		bottom: 50%
 	&:after
 		content: ""
@@ -409,13 +459,6 @@
 		left: -25px
 		top: 50%
 		margin-top: -5px
-	&:hover	
-		background: #FFF9E2
-		.comment__icons
-			display: block
-		.btn-orange
-			color: #fff
-			background: $or
 	&.is-notree
 		&:after, &:before
 			content: none
@@ -650,9 +693,13 @@
 
 ///////////////////////////////// * account  * ////////////////////////////////
 .account
+	+clr
 	.row
 		&:nth-child(odd)
 			background: #fff8f0
+	.btn-save
+		margin-top: 20px
+		float: right
 .box
 	min-height: 300px
 	padding: 20px 40px 20px 20px
@@ -665,14 +712,14 @@
 	font-size: 0
 	+clr
 	.row__left
-		width: 329px
+		width: 190px
 		padding: 5px 0
 		display: inline-block
 		vertical-align: middle
 	.row__left_alight
 		vertical-align: top
 	.row__right
-		width: 270px
+		width: 409px
 		min-height: 30px
 		padding: 5px 0
 		display: inline-block
@@ -693,6 +740,7 @@
 	margin-top: 30px
 	+clr
 	.wrap-member
+		float: right
 		margin-bottom: 5px
 		+clr
 		&.is-active
