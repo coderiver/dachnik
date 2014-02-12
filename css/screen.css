@@ -429,7 +429,7 @@ nav ul { list-style: none; *zoom: 1; }
 nav ul:before, nav ul:after { content: ""; display: table; }
 nav ul:after { clear: both; }
 nav li { float: left; background: white; }
-nav li.is-active { background: linear-gradient(to top, rgba(152, 180, 200, 0.2), rgba(29, 90, 135, 0.99)); z-index: 999; position: relative; }
+nav li.is-active { background: #d6e4ed; background: linear-gradient(to top, rgba(152, 180, 200, 0.2), rgba(29, 90, 135, 0.99)); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(29, 90, 135, 0.99)), color-stop(100%, rgba(152, 180, 200, 0.2))); z-index: 999; position: relative; }
 nav li.is-active a { color: white; background: initial; }
 nav a { height: 42px; line-height: 42px; padding: 0 25px; display: block; position: relative; z-index: 777; background: white; font-weight: bold; color: #27861b; text-transform: uppercase; text-decoration: none; font-size: 16px; font-size: 1.6rem; }
 
