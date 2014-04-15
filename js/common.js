@@ -123,5 +123,8 @@ $(document).ready(function() {
  //    };
  //    $(".l-sidebar").stickyPanel(stickyPanelSettings);
 
- $(".l-sidebar_r").sticky({topSpacing:10});
+ 
+ if($(".l-sidebar_r").size>0){
+ 	$(".l-sidebar_r").sticky({topSpacing:10});
+ }
 });
