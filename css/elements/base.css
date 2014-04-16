@@ -184,6 +184,11 @@
 .input:-moz-placeholder, .input::-moz-placeholder { color: #27861b; opacity: 1; }
 .input::-webkit-input-placeholder { color: #27861b; }
 
+.input_select { width: 100% !important; font-size: 15px !important; border: 1px solid #b8d5e8 !important; background: white !important; }
+
+.custom-combobox { display: block; position: relative; }
+.custom-combobox .ui-button { position: absolute; z-index: 20; right: 12px; top: 50%; margin-top: -4px; content: ""; background: url('../../img/icons-s8dbdd7a8b1.png') 0 -1507px no-repeat; width: 9px; height: 7px; width: 10px !important; height: 10px !important; border: none !important; border-radius: 0 !important; }
+
 .input_w100 { width: 100%; }
 
 .input_mini { width: 135px; }

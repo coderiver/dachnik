@@ -14,7 +14,26 @@
 	+fs(15)
 	color: $gr
 	+placeholder($gr)
-
+.input_select
+	width: 100% !important 
+	font-size: 15px !important
+	border: 1px solid #b8d5e8 !important
+	background: #FFFFFF !important 
+.custom-combobox
+	display: block
+	position: relative
+	.ui-button
+		position: absolute
+		z-index: 20 
+		right: 12px
+		top: 50%
+		margin-top: -4px
+		content: ""
+		+s(arrow)
+		width: 10px !important
+		height: 10px !important
+		border: none !important
+		border-radius: 0 !important 
 .input_w100
 	width: 100%
 .input_mini
